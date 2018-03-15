@@ -16,7 +16,7 @@ $ composer require edwin-luijten/oauth2-strava
 Usage is the same as The League's OAuth client, using `\League\OAuth2\Client\Provider\Plato` as the provider.
 
 ``` php
-$provider = new League\OAuth2\Client\Provider\Strava([
+$provider = new League\OAuth2\Client\Provider\Plato([
     'agencyCode'   => 'toccl',
     'mode'         => 'test' // live or test
     'clientId'     => '{plato-client-id}',
