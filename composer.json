@@ -1,0 +1,29 @@
+{
+    "name": "CarltonSoftware/oauth2-plato",
+    "description": "Plato OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pete Lawrence",
+            "email": "p.lawrence@tabs-software.co.uk"
+        }
+    ],
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authentication"
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "league/oauth2-client": "^2.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "League\\OAuth2\\Client\\": "src/"
+        }
+    }
+}
