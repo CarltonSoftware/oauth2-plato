@@ -7,7 +7,7 @@ Plato OAuth 2.0 Client Provider for The PHP League OAuth2-Client
 Via Composer
 
 ``` bash
-$ composer require edwin-luijten/oauth2-strava
+$ composer require CarltonSoftware/oauth2-plato
 ```
 
 
