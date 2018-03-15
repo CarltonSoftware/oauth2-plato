@@ -13,12 +13,11 @@ class Plato extends AbstractProvider
     /**
      * @var string
      */
-    const BASE_PLATO_URL = 'https://toccl.test.api.tabs-software.co.uk';
-
-    /**
-     * @var string
-     */
     protected $apiVersion = 'v2';
+
+    protected $agencyCode;
+
+    protected $mode = 'test';
 
     /**
      * Constructs an OAuth 2.0 service provider.
@@ -49,7 +48,7 @@ class Plato extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return self::BASE_PLATO_URL . '/oauth/v2/auth';
+        return $this->getBasePlatoUrl() . '/oauth/v2/auth';
     }
 
     /**
@@ -61,7 +60,7 @@ class Plato extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return self::BASE_PLATO_URL . '/oauth/v2/token';
+        return $this->getBasePlatoUrl() . '/oauth/v2/token';
     }
 
     /**
@@ -73,7 +72,7 @@ class Plato extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return self::BASE_PLATO_URL . '/' . $this->apiVersion . '/whoami';
+        return $this->getBasePlatoUrl() . '/' . $this->apiVersion . '/whoami';
     }
 
     /**
@@ -127,7 +126,15 @@ class Plato extends AbstractProvider
      */
     public function getBasePlatoUrl()
     {
-        return self::BASE_PLATO_URL;
+        $url = 'https://' . $this->agencyCode;
+
+        if ($this->mode == 'test') {
+            $url .= '.test';
+        }
+
+        $url .= '.api.tabs-software.co.uk';
+
+        return $url;
     }
 
     /**
