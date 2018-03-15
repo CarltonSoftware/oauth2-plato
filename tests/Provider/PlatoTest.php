@@ -4,8 +4,8 @@ namespace League\OAuth2\Client\Test\Provider;
 
 use PHPUnit\Framework\TestCase;
 
-class PlatoTest extends TestCase {
-
+class PlatoTest extends TestCase
+{
     protected $provider;
 
     public function setUp()
@@ -40,5 +40,4 @@ class PlatoTest extends TestCase {
             [ 'fooba', 'test', 'https://fooba.test.api.tabs-software.co.uk' ]
         ];
     }
-
 }
