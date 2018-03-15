@@ -9,4 +9,5 @@ before_script:
   - travis_retry phpenv rehash
 
 script:
+  - ./vendor/bin/phpcs --standard=PSR2 src/
   - ./vendor/bin/phpunit
