@@ -15,9 +15,7 @@ class Plato extends AbstractProvider
      */
     protected $apiVersion = 'v2';
 
-    protected $agencyCode;
-
-    protected $mode = 'test';
+    protected $apiHost;
 
     /**
      * Constructs an OAuth 2.0 service provider.
@@ -126,15 +124,7 @@ class Plato extends AbstractProvider
      */
     public function getBasePlatoUrl()
     {
-        $url = 'https://' . $this->agencyCode;
-
-        if ($this->mode == 'test') {
-            $url .= '.test';
-        }
-
-        $url .= '.api.tabs-software.co.uk';
-
-        return $url;
+        return $this->apiHost;
     }
 
     /**
