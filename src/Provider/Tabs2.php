@@ -6,7 +6,7 @@ use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
 
-class Plato extends AbstractProvider
+class Tabs2 extends AbstractProvider
 {
     use BearerAuthorizationTrait;
 

@@ -1,7 +1,7 @@
 <?php
 namespace League\OAuth2\Client\Provider;
 
-class PlatoResourceOwner implements ResourceOwnerInterface
+class Tabs2ResourceOwner implements ResourceOwnerInterface
 {
     /**
      * Raw response.

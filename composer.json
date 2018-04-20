@@ -1,6 +1,6 @@
 {
-    "name": "CarltonSoftware/oauth2-plato",
-    "description": "Plato OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+    "name": "CarltonSoftware/oauth2-tabs2",
+    "description": "tabs 2 OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,8 @@
         "oauth2",
         "client",
         "authorization",
-        "authentication"
+        "authentication",
+        "tabs2"
     ],
     "require": {
         "php": ">=5.5.0",
