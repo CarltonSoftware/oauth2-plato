@@ -100,7 +100,7 @@ class Plato extends AbstractProvider
     {
         if ($response->getStatusCode() >= 400) {
             throw new IdentityProviderException(
-                $data['message'] ?: $response->getReasonPhrase(),
+                $response->getReasonPhrase(),
                 $response->getStatusCode(),
                 $response
             );
