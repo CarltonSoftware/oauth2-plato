@@ -116,7 +116,7 @@ class Tabs2 extends AbstractProvider
      */
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new PlatoResourceOwner($response);
+        return new Tabs2ResourceOwner($response);
     }
 
     /**
